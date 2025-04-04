@@ -26,3 +26,11 @@ declare interface NewsAnnouncementObj {
     image: string;
     createdAt: string; // date string
 }
+
+declare interface ManageObj {
+    id: number;
+    name: string;
+    title: string;
+    category: ('admin' | 'board' | 'management')[];
+    image?: string;
+}

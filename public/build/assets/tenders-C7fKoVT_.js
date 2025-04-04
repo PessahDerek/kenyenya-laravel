@@ -1,0 +1,1 @@
+import{j as r}from"./app-4ScKiOJR.js";import{C as t}from"./custom-app-layout-32hzk9W5.js";/* empty css            */import"./index-Czkn8xwk.js";import"./createLucideIcon-CjhkEPNk.js";function i(){return r.jsx(t,{children:r.jsx(r.Fragment,{})})}export{i as default};

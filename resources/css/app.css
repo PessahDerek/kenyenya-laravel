@@ -196,7 +196,7 @@
     * {
         position: relative;
         font-family: "Inter", sans-serif;
-        @apply border-border;
+        @apply border-border scroll-smooth scroll-my-8;
     }
 
     body {
@@ -209,5 +209,18 @@
 }
 
 body {
-    @apply bg-background;
+    @apply bg-background scroll-smooth;
+}
+
+.loaded {
+    @apply  w-full h-full blur-none m-auto object-cover;
+}
+.loading {
+    @apply w-[100px] h-[200px] m-auto blur-xl object-cover
+}
+
+.data-active {
+    &[data-active] {
+        @apply bg-accent;
+    }
 }

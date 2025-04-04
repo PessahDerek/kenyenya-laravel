@@ -4,7 +4,10 @@ import { Button } from '@mantine/core';
 
 export default function Navbar() {
     const { url } = usePage();
-    const active = (path: string) => (url === path ? 'text-secondary' : '');
+    const active = (path: string) => {
+        const is = path === '/' ? url === path : url.split('/').join('/').includes(path.replace('/', ''));
+        return is ? 'text-secondary font-bold' : '';
+    };
     return (
         <nav className={'sticky top-0 z-40 grid h-[70px] w-full bg-white'}>
             <div className={'m-auto flex h-max w-full justify-between px-[2.5%]'}>
@@ -13,7 +16,7 @@ export default function Navbar() {
                 </Link>
                 <div className={'m-auto hidden justify-between gap-10 md:flex'}>
                     {paths.map((path, i) => (
-                        <Link className={active(path.path)} href={path.path} key={i}>
+                        <Link className={`transition-all ${active(path.path)}`} href={path.path} key={i}>
                             {path.label}
                         </Link>
                     ))}

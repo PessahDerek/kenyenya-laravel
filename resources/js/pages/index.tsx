@@ -1,5 +1,5 @@
 import HomeLanding from '@/components/app/sections/home.landing';
-import AppLayout from '@/layouts/app/my-app-layout';
+import CustomAppLayout from '@/layouts/app/custom-app-layout';
 import HomeValues from '@/components/app/sections/home.values';
 import HomeAboutUs from '@/components/app/sections/home.about-us';
 import HomeIntakes from '@/components/app/sections/home.intakes';
@@ -11,7 +11,7 @@ import HomeReachUs from '@/components/app/sections/home.reach-us';
 export default function Index() {
 
     return (
-        <AppLayout>
+        <CustomAppLayout>
             <HomeLanding />
             <HomeValues />
             <HomeAboutUs />
@@ -20,6 +20,6 @@ export default function Index() {
             <HomeExtraCurricular />
             <HomeNews />
             <HomeReachUs />
-        </AppLayout>
+        </CustomAppLayout>
     );
 }

@@ -13,10 +13,15 @@ export interface ExtraCurricularObj {
 export const paths: { path: `/${string}`; label: string }[] = [
     { label: 'Home', path: '/' },
     { label: 'About', path: '/about' },
-    { label: 'Intakes', path: '/intakes' },
-    { label: 'Courses', path: '/courses' },
+    { label: 'Intakes', path: '/#intakes' },
+    { label: 'Courses', path: '/#courses' },
     { label: 'Governance', path: '/governance' },
     { label: 'Tenders', path: '/tenders' },
+];
+export const governancePaths = [
+    { path: '/governance#administration', name: 'Administration' },
+    { path: '/governance#board', name: 'Board of governors' },
+    { path: '/governance#management', name: 'Management' },
 ];
 
 export const values = [
@@ -168,3 +173,54 @@ export const newsAndAnnouncements: NewsAnnouncementObj[] = [
         createdAt: april.toDateString(),
     },
 ];
+
+export const governanceData: ManageObj[] = [
+    {
+        id: 1,
+        name: "Kamau Njoroge",
+        category: ["admin", "board"],
+        title: "Principal",
+    },
+    {
+        id: 2,
+        name: "Achieng Otieno",
+        category: ["admin"],
+        title: "Deputy Principal - Administration",
+    },
+    {
+        id: 3,
+        name: "Wanjiku Mwangi",
+        category: ["admin"],
+        title: "Registrar",
+    },
+    {
+        id: 4,
+        name: "Kipchumba Lagat",
+        category: ["board"],
+        title: "Board Chairperson",
+    },
+    {
+        id: 5,
+        name: "Fatuma Hassan",
+        category: ["board"],
+        title: "Board Treasurer",
+    },
+    {
+        id: 6,
+        name: "Muthoni Kimani",
+        category: ["management"],
+        title: "Dean of Students",
+    },
+    {
+        id: 7,
+        name: "Ochieng Were",
+        category: ["management"],
+        title: "Head of Curriculum",
+    },
+    {
+        id: 8,
+        name: "Njeri Wambui",
+        category: ["management"],
+        title: "Finance Manager",
+    },
+]

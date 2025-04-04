@@ -6,7 +6,7 @@ import { Image } from '@mantine/core';
 
 export default function HomeIntakes() {
     return (
-        <div className={'m-auto grid w-full auto-rows-max overflow-hidden bg-secondary-800 place-items-center gap-4'}>
+        <div id={"intakes"} className={'m-auto grid w-full auto-rows-max overflow-hidden bg-secondary-800 place-items-center gap-4'}>
             {/*<div className={"w-[100vw] h-[100vw] -ml-[0vw] -mt-[-100vh] bg-background rounded-[200vw]"} />*/}
             <Image src={"/ui/curve.svg"} alt={""} />
             <div className={"w-[90%] m-auto place-items-center py-10 grid gap-10"}>

@@ -14,17 +14,23 @@ import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
 import { BookOpen, Folder, LayoutGrid, Pen } from 'lucide-react';
 import AppLogo from './app-logo';
+import { MdEditDocument } from 'react-icons/md';
 
 const mainNavItems: NavItem[] = [
     {
         title: 'Dashboard',
-        href: '/dashboard',
+        href: '/admin/',
         icon: LayoutGrid,
     },
     {
         title: 'About',
-        href: '/about',
+        href: '/admin/about',
         icon: Pen
+    },
+    {
+        title: "Tenders",
+        href: '/admin/tenders',
+        icon: MdEditDocument
     }
 ];
 
@@ -48,7 +54,7 @@ export function AppSidebar() {
                 <SidebarMenu>
                     <SidebarMenuItem>
                         <SidebarMenuButton size="lg" asChild>
-                            <Link href="/dashboard" prefetch>
+                            <Link href="/" prefetch>
                                 <AppLogo />
                             </Link>
                         </SidebarMenuButton>
